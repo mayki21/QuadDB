@@ -2,7 +2,7 @@ const jwt=require("jsonwebtoken")
 
 const authorise=(req,res,next)=>{
 
-    const token=req.headers.authorization.split(" ")[1]
+    const token=req.headers.authorization
 
     if(token)
     {
